@@ -1,0 +1,20 @@
+{
+  "name": "savings",
+  "version": "1.0.0",
+  "description": "an app to track ur savings",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "retash",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "git": "^0.1.5",
+    "mongodb": "^3.6.3",
+    "nodemon": "^2.0.6"
+  }
+}
