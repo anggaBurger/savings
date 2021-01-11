@@ -36,12 +36,15 @@ app.get('/', function(req, res){
             <p style="color: #E4E6EB; padding-top: 17px; font-size: 17px; margin-left: 31px; margin-bottom: -28px" >You have saved</p>
             ${items.map((item) => {
                 return `
-                <h1 data-id="${item._id}" class="saved" style="color: #E4E6EB; font-size: 46px; margin-left: 31px; margin-bottom: -3px" >Rp ${item.value}</h1>
-                <button class="add-me" type="Button" style="background-color: #0E6B0E; width: 160px; height: 38px; border-radius: 18px; margin-top: 45px;  margin-left: 31px; border: 0px; color: #E4E6EB;"> + </button>
-                <button class="sub-me" type="Button" style="background-color: #8E1600; width: 160px; height: 38px; border-radius: 18px; margin-top: 45px;  margin-left: 31px; border: 0px; color: #E4E6EB;""> - </button>`
+                <div id="showBalance">
+                
+                </div>`
             }).join("")}
             
         </div>
+        <script>
+            let items = ${JSON.stringify(items)}
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="/browser.js"></script>
     </body>
