@@ -27,11 +27,10 @@ app.get('/', function(req, res){
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Savings</title>
     </head>
     <body style="background-color: #18191A; font-family: Arial, Helvetica, sans-serif;">
-        <h1 style="font-size: 35px; padding-top: 21px; color: #E4E6EB; text-align: center;" >Save Joe Money!</h1>
+        <h1 style="font-size: 35px; padding-top: 21px; color: #E4E6EB; text-align: center;" >My Savings</h1>
         <div style="background-color: #242526; margin-top: 250px; margin-left: 577px; width: 35%; height: 231px; border-radius: 18px; line-height: 45px; color: #E4E6EB; padding: auto" >
             <p style="color: #E4E6EB; padding-top: 17px; font-size: 17px; margin-left: 31px; margin-bottom: -28px" >You have saved</p>
             ${items.map((item) => {

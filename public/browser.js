@@ -11,8 +11,6 @@ let balance = items.map((item) => {
 
 document.getElementById('showBalance').insertAdjacentHTML('afterend', balance)
 
-
-
 document.addEventListener("click", (e) => {
     //ADD BALANCE COMMAND
     if(e.target.classList.contains("add-me")){
