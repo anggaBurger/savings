@@ -63,7 +63,7 @@ app.post('/sub', function(req, res){
     db.collection('items').findOneAndUpdate({_id: new mongodb.ObjectID("5feef9c67f16d587b63887ac")}, {$inc: {value : -req.body.value}}, () => {
         console.log("OK")
         console.log(req.body.value)
-        res.redirect('/')
+        
     })
 })
 

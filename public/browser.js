@@ -18,7 +18,7 @@ document.addEventListener("click", (e) => {
        let numb = parseInt(userInput, 10)
         if(userInput){
             axios.post('/add', {value: numb}).then(() => {
-                document.getElementById('saved').insertAdjacentHTML('beforeend', balance)
+                document.getElementById('saved').innerHTML = numb
             }).catch(() => {
                 console.log(console.error())
             })
